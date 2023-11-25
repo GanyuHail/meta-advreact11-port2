@@ -32,6 +32,14 @@ const socials = [
   },
 ];
 
+function socialLinks ({icon, url}) {
+  return (
+    icon="icon",
+    url="url"
+  )
+}
+
+
 const Header = () => {
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -52,7 +60,7 @@ const Header = () => {
       right={0}
       translateY={0}
       transitionProperty="transform"
-      transitionDuration=".3s"
+      transitionDuration=".3s"  
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
     >
@@ -64,7 +72,7 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            {/* Add social media links based on the `socials` data */}
+            {socialLinks()}
           </nav>
           <nav>
             <HStack spacing={8}>
